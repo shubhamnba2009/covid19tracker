@@ -1,0 +1,22 @@
+<!DOCTYPE HTML5>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/services/covidapi.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.bundle.js"></script>
+    
+    <title>COVID-19 Tracker | Home</title>
+  </head>
+  <body onload="fetchDataForSelectedCountry()">
+    <header>
+      <h1>COVID-19 Tracker</h1>
+    </header>
+    <div id="caseStatsContainer" class="caseStatsContainer">
+    </div>
+    <div style="width: 800px; height: 800px; margin-right:auto; margin-left:auto; margin-top:60px;">
+    <canvas id="myChart"></canvas>
+    </div>
+  </body>
+</html>  
